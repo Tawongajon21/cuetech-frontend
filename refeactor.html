@@ -1,0 +1,10 @@
+const role = localStorage.getItem("role");
+if (role === "1" || role === "2"){
+
+} else if (role === "3") {
+navigate("/farmers/dashboard")
+}
+else {
+localStorage.clear()
+navigate("/")
+}
